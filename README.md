@@ -48,10 +48,14 @@ Three layouts were built and compared pairwise against the judge
 criteria (names the day, breadth, reads, faithful, craft); the
 tabloid layout is the entry. The classic layout left its middle
 grid column blank and merged two grid stories; the India layout
-dropped four grid stories and garbled a fifth. The chosen layout
-keeps the full 5–16 grid and all four leads; its known flaw is
-one missing one-line item in the list (24, India condemning the
-Riyadh tower attack).
+dropped four grid stories and garbled a fifth. The chosen layout keeps the full 5–16 grid and all four leads.
+Revision 26 November 2026 restored the one missing one-line item
+in the list (24, India condemning the Riyadh tower attack): the
+three ALSO columns were redrawn uniformly at a slightly smaller
+size so all 26 items 17–42 now fit (pixel-level patch of
+`entry.png`; nothing outside the ALSO columns was touched). The
+complete 42-story list is kept in `stories.md` as the source of
+truth.
 
 `main.ts` uses only the Node standard library, makes no network
 calls, and writes the same bytes on every run.
@@ -59,7 +63,9 @@ calls, and writes the same bytes on every run.
 ## Contents
 
 - `main.ts` — entry point: copies the bundled PNG out.
-- `entry.png` — the finished 1024×1024 poster (527.408 bytes).
+- `entry.png` — the finished 1024×1024 poster (revised 26 Nov 2026).
+- `stories.md` — the full 42-story source list (leads, grid, ALSO
+  list, date check, variant comparison, revision note).
 - `LICENSE` — MIT.
 
 ---
